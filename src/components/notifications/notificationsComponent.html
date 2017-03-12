@@ -1,0 +1,43 @@
+<ul class="dropdown-menu">
+    <li class="notification_container">
+            <ul class="hero">
+                <li class="head">
+                    <h3>{{ $ctrl.pageLoadTime | date: "EEEE" }} {{ $ctrl.pageLoadTime | date }}
+                    
+                    </h3>
+                </li>
+                <li>
+                    <div class="col-xs-4 count">{{$ctrl.taskCount(1)}}</div>
+                    <div class="col-xs-8 task">Assigned Task</div>
+                </li>
+                <li>
+                    <div class="col-xs-4 count">{{$ctrl.taskCount(2)}}</div>
+                    <div class="col-xs-8 task"><span>Reminders</span></div>
+                </li>
+                <li>
+                    <div class="col-xs-4 count">{{$ctrl.Messages.length}}</div>
+                    <div class="col-xs-8 task">Notifications</div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="text-center more_link">My Workspace &gt;</a>
+                </li>
+            </ul>
+            
+        <notification-detail ng-repeat="hero in $ctrl.list" hero="hero"></notification-detail>
+    
+    </li>
+    <li ng-repeat="message in $ctrl.Messages | orderBy:'-timeStamp' track by $index">
+      
+        <h4>
+            <span ng-if="$index === 0">{{ $ctrl.pageLoadTime | timeAgo | capitalize }}</span>
+            <span ng-if="$index !== 0">{{ message.timeStamp | timeAgo | capitalize }}</span>
+            
+        </h4>
+       <p>{{ message.content }} 
+           <a href="{{message.action_href}}"  ng-bind-html="message.action"> <i class="pull-right icon-chevron-right"></i></a></p>
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true" >&times;</span>
+        </button>
+      
+    </li>
+</ul>

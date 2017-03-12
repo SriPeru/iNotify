@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-bordered">
+    <!-- table caption will be displayed here-->
+    <tr>
+      <td id="caption" colspan="4">{{$ctrl.name}}</td>
+    </tr>
+    <thead>
+      <th>Name</th>
+      <th>City</th>
+      <th>Country</th>
+    </thead>
+    <!-- users will be displayed here-->
+    <tr ng-repeat="user in $ctrl.records">
+      <td></td>
+      <td>{{user.name}}</td>
+      <td>{{user.city}}</td>
+      <td>{{user.country}}</td>
+    </tr>
+  </table>
+</div>

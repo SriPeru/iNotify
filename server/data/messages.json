@@ -1,0 +1,39 @@
+[
+{
+        "msgType": 1,
+        "content": "Steve Jobs has assigned the Book Travel task",
+        "timeStamp": "2017-03-11T05:25:00Z",
+        "action" : "View Task &gt;",
+        "action_href": "#"
+      },
+    {
+        "msgType": 2,
+        "content": "Buck Owens has assigned the Mobility Submit task",
+        "timeStamp": "2017-03-11T05:25:00Z",
+        "action" : "View Task &gt;",
+        "action_href": "#"
+      },
+    {
+        "msgType": 1,
+        "content": "Hans Zolo has assigned the Mobility. Complete task",
+        "timeStamp": "2017-03-12T05:25:00Z",
+        "action" : "View Task &gt;",
+        "action_href": "#"
+      },
+    {
+        "msgType": 1,
+        "content": "Steve Jobs has assigned the Mobility Complete task to you",
+        "timeStamp": "2017-03-12T05:25:00Z",
+        "action" : "View Task &gt;",
+        "action_href": "#"
+      },
+    {
+        "msgType": 1,
+        "content": "Tim cook has assigned the Mobility Complete task to you",
+        "timeStamp": "2017-03-12T05:25:00Z",
+        "action" : "View Task &gt;",
+        "action_href": "#"
+      }
+    
+]
+
