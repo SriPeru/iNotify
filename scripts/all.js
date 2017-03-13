@@ -1101,10 +1101,10 @@ angular.module('yaru22.angular-timeago').filter('timeAgo', ["nowTime", "timeAgo"
   const app = angular.module('app');
     
 app.factory('Messages', function($websocket) {
-  let ws = $websocket('ws://echo.websocket.org/');
+  //let ws = $websocket('ws://echo.websocket.org/');
   let collection=[];
 
-  ws.onMessage(function(event) {
+  //ws.onMessage(function(event) {
     
     var res;
     try {
@@ -1163,7 +1163,7 @@ app.factory('Messages', function($websocket) {
       }
       
       
-  });
+  //});
 
     //Simulating server push for static demo, will work fine with original source
     let broadcast = function(i) {
@@ -1187,7 +1187,7 @@ app.factory('Messages', function($websocket) {
 
         broadcast(6);
     //Simulating server push for static demo, will work fine with original source
-    
+/*    
   ws.onError(function(event) {
     console.log('connection Error', event);
   });
@@ -1201,7 +1201,7 @@ app.factory('Messages', function($websocket) {
     ws.send('Hello There');
     ws.send('Came Again');
     ws.send('and again');
-  });
+  });*/
 //Didn't close the connection - need to enable
   // setTimeout(function() {
   //   ws.close();
