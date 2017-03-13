@@ -1171,7 +1171,7 @@ app.factory('Messages', function($websocket) {
           
               let pushjson = '{'+
                                         '"msgType": 1,'+
-                                        '"content": "Srini Perumal Checking the push state - '+ i+'",'+
+                                        '"content": "Srini Perumal - WebSocket Check - '+ i+'",'+
                                         '"timeStamp": "'+ new Date().toISOString() +'",'+
                                         '"action" : "View Task &gt;",'+
                                         '"action_href": "#"'+
@@ -1235,7 +1235,7 @@ app.factory('Messages', function($websocket) {
     },
     templateUrl: '/iNotify/html/footer.html',
     controller: function () {
-      this.footercontent = "&#169; All Rights Reserved. Srini Perumal Inc. 2017";
+      this.footercontent = "&#169; All Rights Reserved. Srini Perumal. 2017";
     }
   });
 })();
