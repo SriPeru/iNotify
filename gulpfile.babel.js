@@ -1,10 +1,10 @@
-import gulp from    'gulp';
-import concat from  'gulp-concat';
-import server from  'browser-sync';
-import sass from    'gulp-sass';
-import del from     'del';
-import express from 'gulp-express';
-import flatten from 'gulp-flatten';
+const gulp = require('gulp');
+const concat  = require('gulp-concat');
+const server  = require('browser-sync');
+const sass  = require('gulp-sass');
+const del  = require('del');
+const express  = require('gulp-express');
+const flatten  = require('gulp-flatten');
 
 const paths = {
   dist: './dist/',
