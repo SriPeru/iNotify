@@ -1,7 +1,7 @@
 # Welcome to iNotify
 Yet Another Task Scheduler
 
-This is just demo files
+Demo files only
 
 [Check Demo](https://sriperu.github.io/iNotify/)
 
