@@ -1060,9 +1060,10 @@ angular.module('yaru22.angular-timeago').filter('timeAgo', ["nowTime", "timeAgo"
             numbers: []
           };
     });
-  app.controller('HomeCtrl', function () {
+  app.controller('HomeCtrl',HomeCtrl);
+ function HomeCtrl() {
     this.loading = "Loading...";
-  });
+  };
 })();
 (() => {
   'use strict';
